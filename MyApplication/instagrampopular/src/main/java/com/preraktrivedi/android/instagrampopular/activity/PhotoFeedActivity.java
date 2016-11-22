@@ -17,6 +17,9 @@ import com.preraktrivedi.android.instagrampopular.R;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
+/**
+ * Created by preraktrivedi on 11/21/16.
+ */
 public class PhotoFeedActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 

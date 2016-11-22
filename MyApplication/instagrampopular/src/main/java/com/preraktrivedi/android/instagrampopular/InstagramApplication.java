@@ -4,7 +4,7 @@ import android.support.multidex.MultiDexApplication;
 import android.util.Log;
 
 /**
- * Created by prtrived on 11/21/16.
+ * Created by preraktrivedi on 11/21/16.
  */
 public class InstagramApplication extends MultiDexApplication {
 
