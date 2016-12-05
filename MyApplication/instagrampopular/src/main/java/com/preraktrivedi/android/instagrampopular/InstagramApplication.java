@@ -1,5 +1,6 @@
 package com.preraktrivedi.android.instagrampopular;
 
+import android.content.Context;
 import android.support.multidex.MultiDexApplication;
 import android.util.Log;
 
@@ -10,10 +11,13 @@ public class InstagramApplication extends MultiDexApplication {
 
     private static final String TAG = InstagramApplication.class.getSimpleName();
 
+    private static Context mContext;
+
     @Override
     public void onCreate() {
         Log.d(TAG, ">onCreate");
         super.onCreate();
+        mContext = getApplicationContext();
     }
 
     @Override
@@ -26,5 +30,9 @@ public class InstagramApplication extends MultiDexApplication {
     public void onTerminate() {
         Log.d(TAG, ">onTerminate");
         super.onTerminate();
+    }
+
+    public static Context getContext() {
+        return mContext;
     }
 }

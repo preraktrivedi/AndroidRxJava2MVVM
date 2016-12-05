@@ -5,6 +5,12 @@ ext {
     retrofitVersion = "2.1.0"
     butterknifeVersion = "8.4.0"
     rxJavaVersion = "2.0.0"
+
+    KEY_STRING = "String"
+    KEY_BOOLEAN = "boolean"
+    KEY_RES_STRING = "string"
+    KEY_BASE_URL = "BASE_URL"
+    KEY_APP_NAME = 'custom_app_name'
 }
 
 android {
@@ -12,12 +18,14 @@ android {
     buildToolsVersion "25.0.0"
 
     defaultConfig {
-        applicationId "com.preraktrivedi.android.instagrampopular"
+        applicationId appId
         minSdkVersion 21
         targetSdkVersion 25
-        versionCode 1
-        versionName "1.0"
+        versionCode "${appVersionCode}" as int
+        versionName "${appVersionName}"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        buildConfigField KEY_STRING, KEY_BASE_URL, "\"${baseUrl}\""
+        resValue KEY_RES_STRING, KEY_APP_NAME, "\"${appName}\""
 
         jackOptions {
             enabled true

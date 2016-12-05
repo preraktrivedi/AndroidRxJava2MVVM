@@ -1,5 +1,7 @@
 package com.preraktrivedi.android.instagrampopular.activity;
 
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
@@ -26,11 +28,15 @@ public class PhotoFeedActivity extends AppCompatActivity
     @BindView(R.id.toolbar)
     Toolbar mToolbar;
 
-    @BindView(R.id.fab)
-    FloatingActionButton fab;
+    @BindView(R.id.fabPhotoFeed)
+    FloatingActionButton fabPhotoFeed;
 
     @BindView(R.id.drawer_layout)
     DrawerLayout drawer;
+
+    public static Intent createIntent(Context fromActivity) {
+        return new Intent(fromActivity, PhotoFeedActivity.class);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,8 +44,11 @@ public class PhotoFeedActivity extends AppCompatActivity
         setContentView(R.layout.activity_photo_feed);
         ButterKnife.bind(this);
         setSupportActionBar(mToolbar);
+        initUi();
+    }
 
-        fab.setOnClickListener(view -> Snackbar.make(view,
+    private void initUi() {
+        fabPhotoFeed.setOnClickListener(view -> Snackbar.make(view,
                 "Replace with your own action", Snackbar.LENGTH_LONG)
                 .setAction("Action", null).show());
 

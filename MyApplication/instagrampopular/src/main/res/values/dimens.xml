@@ -6,4 +6,15 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
+    <dimen name="layout_margin_left_right">16dp</dimen>
+
+    <dimen name="text_small">12sp</dimen>
+    <dimen name="text_medium">14sp</dimen>
+    <dimen name="text_medium_plus">16sp</dimen>
+    <dimen name="text_large">18sp</dimen>
+    <dimen name="text_large_plus">21sp</dimen>
+    <dimen name="text_size_xl">25sp</dimen>
+    <dimen name="text_size_xl_plus">25sp</dimen>
+    <dimen name="text_size_xxl">40sp</dimen>
+    <dimen name="default_top_margin">30dp</dimen>
 </resources>

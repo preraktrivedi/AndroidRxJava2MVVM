@@ -1,6 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+
+    <!-- Theme Colors -->
+    <color name="colorPrimary">#128097</color>
+    <color name="colorPrimaryDark">#0D6A81</color>
+    <color name="colorAccent">#4DA34C</color>
+    <color name="colorSecondary">#4DA34C</color>
+    <color name="colorPrimaryText">#FFFFFFFF</color>
+    <color name="colorSecondaryText">@color/colorSecondary</color>
+
+    <!-- App Colors -->
+    <color name="grey">#65686B</color>
+    <color name="medium_grey">#C2C2C2</color>
+    <color name="light_grey">#F1F1F2</color>
+    <color name="dark_grey">#333333</color>
+    <color name="blue">#003EA9</color>
+    <color name="white">#FFFFFF</color>
+    <color name="green">#16A35E</color>
+    <color name="dark_cyan">#ff009688</color>
+
+    <color name="default_hyperlink_color">@color/blue</color>
+    <color name="alert_state_on_color">@color/green</color>
+    <color name="nav_menu_divider_color">#33FFFFFF</color>
+
+    <color name="default_primary_background_text_color">@color/colorPrimaryText</color>
+    <color name="default_primary_button_text_color">@color/colorPrimaryText</color>
+    <color name="default_secondary_button_text_color">@color/colorSecondaryText</color>
+    <color name="default_label_text_color">@color/dark_grey</color>
+
+    <color name="default_hint_text_color">@color/grey</color>
+    <color name="default_input_text_color">@color/dark_grey</color>
+    <color name="default_input_error_text_color">#DC553E</color>
+    <color name="default_input_text_color_disabled">#FF85888C</color>
+    <color name="default_input_text_underline_color">@color/medium_grey</color>
+
 </resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="rp_dialog_title">Are you sure?</string>
+    <string name="rp_yes_sure">Yes, I\'m Sure</string>
+    <string name="rp_allow">Allow</string>
+
+    <string name="rp_settings_dialog_title">Permission Error!</string>
+
+    <string name="rp_rationale_read_phone_state">Please allow %1$s to access your device details, otherwise the app cannot run.</string>
+    <string name="rp_settings_read_phone_state_title">Allow Phone Permissions</string>
+    <string name="rp_settings_read_phone_state_msg">To run this app, allow %1$s to access your device details by going to Settings and selecting the Phone permission</string>
+
+    <string name="rp_device_details_msg">We need your permission to access some device features and information.</string>
+    <string name="rp_device_details_instruction">Select \"Allow\" on the next screen to use this app.</string>
+    <string name="rp_device_details_go_to_app_instruction">Tap \"Go to App info\" below, \nthen tap \"Permissions\" and turn on \"Phone\" \nto use this app.</string>
+    <string name="rp_device_details_btn">Go to App info</string>
+
+</resources>

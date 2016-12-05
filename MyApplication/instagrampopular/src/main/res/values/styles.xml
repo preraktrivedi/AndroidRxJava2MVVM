@@ -1,20 +1,65 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowBackground">@color/light_grey</item>
+        <!-- android theme colors -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorAccent">@color/colorSecondary</item>
+
+        <item name="colorControlNormal">@color/default_label_text_color</item>
+        <item name="colorControlActivated">@color/colorPrimary</item>
+        <item name="colorControlHighlight">@color/colorPrimary</item>
+
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+        <item name="android:editTextStyle">@style/EditTextDefault</item>
     </style>
 
-    <style name="AppTheme.NoActionBar">
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
+    <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@color/default_primary_background_text_color</item>
+    </style>
+
+    <style name="EditTextDefault" parent="Widget.AppCompat.EditText">
+        <item name="android:layout_marginLeft">@dimen/layout_margin_left_right</item>
+        <item name="android:layout_marginRight">@dimen/layout_margin_left_right</item>
+        <item name="android:textSize">@dimen/text_medium_plus</item>
+        <item name="android:textColor">@drawable/statelist_edittext</item>
+        <item name="android:textColorHint">@color/default_hint_text_color</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:paddingBottom">@dimen/layout_margin_left_right</item>
+        <item name="android:longClickable">false</item>
+    </style>
+
+    <style name="PasscodeEditText" parent="Widget.AppCompat.EditText">
+        <item name="android:inputType">numberPassword</item>
+        <item name="android:gravity">center</item>
+        <item name="android:maxLength">1</item>
+        <item name="android:textSize">@dimen/text_large</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textColorHint">@android:color/white</item>
+        <item name="android:longClickable">false</item>
+        <item name="android:clickable">false</item>
+        <item name="android:focusable">false</item>
+        <item name="android:scaleX">1.9</item>
+        <item name="android:scaleY">1.6</item>
     </style>
 
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!-- AlertDialog Styles -->
+
+    <style name="AppCompatAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/default_hyperlink_color</item>
+        <item name="android:textColorPrimary">@color/default_label_text_color</item>
+        <item name="android:background">@android:color/white</item>
+    </style>
 
 </resources>
